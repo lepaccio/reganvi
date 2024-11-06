@@ -8,6 +8,7 @@ import {
 import type { LinksFunction } from "@remix-run/node";
 
 import "./tailwind.css";
+import TopBar from "./components/TopBar";
 
 export const links: LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -31,8 +32,13 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body>
-        {children}
+      <body className="bg-[#DEDEDE] w-full">
+        <TopBar />
+        <main className="w-full flex justify-center px-4">
+          <div className="w-full max-w-[1244px] lg:max-w-[1244px] sm:max-w-[343]">
+            {children}
+          </div>
+        </main>
         <ScrollRestoration />
         <Scripts />
       </body>

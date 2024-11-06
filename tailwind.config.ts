@@ -16,6 +16,11 @@ export default {
           '"Noto Color Emoji"',
         ],
       },
+
+      screens: {
+        "lg": "1336px",
+        "sm": "440px",
+      },
     },
   },
   plugins: [],
