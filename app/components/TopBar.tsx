@@ -33,7 +33,7 @@ export default function TopBar() {
             </li>
             <li>
               <NavLink 
-                to="/catalogo"
+                to="#"
                 className={({ isActive}: {isActive: boolean}) => 
                   isActive
                     ? "nav-link text-[#155C22]" //Activo
@@ -41,13 +41,13 @@ export default function TopBar() {
                 }
               >
                 <NavItemText>
-                  CATOLOGO
+                  CATALOGO
                 </NavItemText> 
               </NavLink>
             </li>
             <li>
               <NavLink 
-                to="/nosotros"
+                to="#"
                 className={({ isActive}: {isActive: boolean}) => 
                   isActive
                     ? "nav-link text-[#155C22]" //Activo
