@@ -88,19 +88,19 @@ export default function Index() {
             </div>
             <div className="grid grid-cols-4"> {/* contenedor de las estadisticas */}
               <CardStadistics
-                value="+15"
+                value="+30"
                 description="Empresas"
               />
               <CardStadistics
-                value="+400"
+                value="+700"
                 description="Comunidad"
               />
               <CardStadistics
-                value="+50 TN"
+                value="+120 TN"
                 description="Materiales"
               />
               <CardStadistics
-                value="+$5K"
+                value="+$7.5K"
                 description="Ventas"
               />
             </div>
