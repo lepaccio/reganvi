@@ -1,0 +1,8 @@
+/* app/styles/navigation.css */
+.nav-link {
+    font-family: 'Raleway', 'sans-serif'; /* Familia de fuente */
+    font-size: 22px;                    /* Tamaño de fuente */
+    font-weight: 600;                   /* Peso de fuente */
+    line-height: 28px;                  /* Altura de línea */
+    text-align: center;                 /* Alineación de texto */
+  }

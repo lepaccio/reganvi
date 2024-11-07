@@ -1,0 +1,19 @@
+.bg-gradient-circular {
+    background-image: radial-gradient(circle at 70% 300px, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.2) 40%);
+    background-size: 100% 100%;
+  }
+
+.text-sombra p{
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.45);
+}
+
+.mini-text div {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.mini-text p{
+  font-family: 'Raleway', 'sans-serif';
+  font-size: 16px;
+  font-weight: 400;
+}

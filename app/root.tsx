@@ -19,25 +19,28 @@ export const links: LinksFunction = () => [
   },
   {
     rel: "stylesheet",
-    href: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap",
+    href: "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap",
   },
+  { rel: "stylesheet", href: "/styles/index-custom.css" }, // Asegúrate de que esté incluido aquí
+  { rel: "stylesheet", href: "/styles/navigation.css" },
+  { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="es">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
         <Links />
       </head>
-      <body className="bg-[#DEDEDE] w-full">
-        <TopBar />
-        <main className="w-full flex justify-center px-4">
-          <div className="w-full max-w-[1244px] lg:max-w-[1244px] sm:max-w-[343]">
-            {children}
-          </div>
+      <body >
+        <header>
+          <TopBar />
+        </header>
+        <main className="w-full flex flex-col items-center justify-center">
+          <Outlet /> {/* Renderiza el contenido de cada ruta aquí */}
         </main>
         <ScrollRestoration />
         <Scripts />

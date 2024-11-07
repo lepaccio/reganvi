@@ -4,6 +4,9 @@ export default {
   content: ["./app/**/{**,.client,.server}/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      boxShadow: {
+        'text-shadow': '0px 4px 4px rgba(0, 0, 0, 0.45)',
+      },
       fontFamily: {
         sans: [
           '"Inter"',
@@ -15,6 +18,8 @@ export default {
           '"Segoe UI Symbol"',
           '"Noto Color Emoji"',
         ],
+        montserrat: ['Montserrat', 'sans-serif'],
+        raleway: ['Raleway', 'sans-serif'],
       },
 
       screens: {
