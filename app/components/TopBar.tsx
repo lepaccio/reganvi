@@ -11,7 +11,7 @@ export default function TopBar() {
       <div className="w-full max-w-[1244px] lg:max-w-[1244px] sm:max-w-[343px] mx-auto flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="my-2">
-          <img src="public/images/logos/logo-page.svg" alt="Reganvi Logo" className="logo-size inline-block mr-2" />
+          <img src="../images/logos/logo-page.svg" alt="Reganvi Logo" className="logo-size inline-block mr-2" />
         </Link>
         
         {/* Navegación */}

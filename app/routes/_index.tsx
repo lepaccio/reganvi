@@ -50,7 +50,7 @@ export default function Index() {
               <CardIndex
                 bgcolor="bg-[#8BB663]"
                 title="Quiero vender"
-                imageSrc="../public/images/general/person.svg"
+                imageSrc="../images/general/person.svg"
                 description="Ofrece tus materiales reciclados y conecta con empresas que los necesitan."
                 buttonText="OFRECE"
                 buttonBgColor="bg-[#238235]"
@@ -62,7 +62,7 @@ export default function Index() {
             <CardIndex
                 bgcolor="bg-[#66ACCE]"
                 title="Quiero comprar"
-                imageSrc="public/images/general/company.svg"
+                imageSrc="../images/general/company.svg"
                 description="Encuentra y compra materiales reciclados para tu proceso de producción."
                 buttonText="COMPRA"
                 buttonBgColor="bg-[#0A3C5F]"
@@ -117,13 +117,13 @@ export default function Index() {
           </div>
           <div className="w-full flex flex-col justify-center items-center gap-8"> {/* Logos */}
             <div className="w-full flex justify-around items-center">
-                <img src="public/images/logos/pamolsa-logo.svg" alt="" />
-                <img src="public/images/logos/smi-logo.svg" alt="" />
-                <img src="public/images/logos/solpack-logo.svg" alt="" />
+                <img src="../images/logos/pamolsa-logo.svg" alt="" />
+                <img src="../images/logos/smi-logo.svg" alt="" />
+                <img src="../images/logos/solpack-logo.svg" alt="" />
             </div>
             <div className="w-full flex justify-around items-center">
-                <img src="public/images/logos/gyf-logo.svg" alt="" />
-                <img src="public/images/logos/papelera-logo.svg" alt="" />
+                <img src="../images/logos/gyf-logo.svg" alt="" />
+                <img src="../images/logos/papelera-logo.svg" alt="" />
             </div>
           </div>
         </div>
@@ -158,19 +158,19 @@ export default function Index() {
             <div className="h-[106px] flex flex-col items-start mini-text gap-1">
               <a href="https://www.facebook.com/reganvi015" target="_blank" rel="noopener noreferrer">
                 <div className="flex justify-between">
-                  <img src="public/images/logos/f-logo.svg" alt="" />
+                  <img src="../images/logos/f-logo.svg" alt="" />
                   <p>Facebook</p>
                 </div>
               </a>
               <a href="https://www.instagram.com/reganvi.pe/" target="_blank" rel="noopener noreferrer">
                 <div>
-                  <img src="public/images/logos/i-logo.svg" alt="" />
+                  <img src="../images/logos/i-logo.svg" alt="" />
                   <p>Instagram</p>
                 </div>
               </a>
               <a href="https://pe.linkedin.com/company/reganvi" target="_blank" rel="noopener noreferrer">
                 <div>
-                  <img src="public/images/logos/l-logo.svg" alt="" />
+                  <img src="../images/logos/l-logo.svg" alt="" />
                   <p>LinkedIn</p>
                 </div> 
               </a>
