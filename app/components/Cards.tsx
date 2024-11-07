@@ -48,7 +48,7 @@ export function CardIndex({
                     className={`${buttonBgColor} text-white w-[288px] px-4 py-3 rounded-full flex items-center justify-center gap-2`}
                     onClick={onButtonClick}
                 >
-                    <img src="../public/images/icons/whatsapplogo.svg" alt="logo whatsapp" />
+                    <img src="../images/icons/whatsapplogo.svg" alt="logo whatsapp" />
                     <span className="font-montserrat font-semibold text-[24px] tracking-normal leading-none">
                         {buttonText} 
                     </span>
