@@ -187,6 +187,19 @@ export default function Index() {
           </div>
         </div>
       </footer>
+      {/* Código existente */}
+      
+      {/* Burbuja flotante de WhatsApp */}
+      <a
+          href="https://wa.me/+14243737214?text=Hola%20quiero%20saber%20cuanto%20cuesta%20un%20material"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="rounded-full shadow-lg"
+        >
+        <div className="fixed bottom-10 right-10 bg-white rounded-[48px] shadow-[5px_5px_10px_rgba(0,0,0,0.5)]">
+          <img src="../images/logos/reganvi-logo.svg" alt="WhatsApp" className="m-4 w-12 h-12"/>
+        </div>
+      </a>
     </>
   );
 }
