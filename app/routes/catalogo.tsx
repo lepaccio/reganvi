@@ -17,7 +17,7 @@ export default function Catalogo() {
           className="w-full bg-[#81C244] flex justify-center" 
           style={{backgroundImage: 'linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0, rgba(0, 0, 0, 0) 50%)'
         }}> {/* Sección de título */}
-          <div className="w-[1224px] font-montserrat text-[72px] px-1 py-4 flex flex-col gap-2 ">
+          <div className="w-[1224px] font-montserrat text-[72px] px-1 my-8 flex flex-col gap-2 ">
             <h1 className="font-bold leading-[80px]">Precios <span className="text-[#155C22]">Estimados</span></h1>
             <p className="font-raleway text-[22px] leading-[26px]">¿Que nuevo material deseas comprar hoy?</p>
           </div>

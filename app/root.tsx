@@ -50,9 +50,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <div className="w-[1224px] flex justify-between"> 
           <div className="flex flex-col gap-6"> {/* Logo */}
             <div> 
-              <img src="public/images/logos/reganvi-logo.svg" alt="" />
+              <img src="../images/logos/reganvi-logo.svg" alt="" />
             </div>
-            <div className="h-[72px] mini-text gap-1">
+            <div className="h-[48px] mini-text gap-1">
               <p className="font-raleway font-medium text-[20px] text-start leading-none tracking-tight">Reganvi</p>
               <p>© 2023 Reganvi Perú</p>
             </div>
