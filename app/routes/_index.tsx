@@ -1,7 +1,7 @@
 // app/routes/index.tsx
 import { MetaFunction } from "@remix-run/node";
-import {TitleSection} from "../components/TextComponents";
-import { CardIndex, CardStadistics } from "../components/Cards";
+import {TitleSection} from "../components/text-components";
+import { CardIndex, CardStadistics } from "../components/cards-components";
 import "public/styles/index-custom.css";
 
 export const meta: MetaFunction = () => {

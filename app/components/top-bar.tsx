@@ -2,7 +2,7 @@
 
 import { Link } from "@remix-run/react";
 import { NavLink } from "@remix-run/react";
-import { NavItemText } from "./TextComponents";
+import { NavItemText } from "./text-components";
 import "public/styles/navigation.css"; // Importa los estilos de navegación
 
 export default function TopBar() {

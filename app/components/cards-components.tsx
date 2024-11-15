@@ -1,5 +1,5 @@
 import React from "react";
-import { CardTitleIndex , CardDescription } from "./TextComponents";
+import { CardTitleIndex , CardDescription } from "./text-components";
 import { Link } from "@remix-run/react";
 
 type CardProps = {
