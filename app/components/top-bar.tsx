@@ -1,8 +1,6 @@
-// app/components/TopBar.tsx
-
 import { Link } from "@remix-run/react";
 import { NavLink } from "@remix-run/react";
-import { NavItemText } from "./TextComponents";
+import { NavItemText } from "./text-components";
 import "public/styles/navigation.css"; // Importa los estilos de navegación
 
 export default function TopBar() {
@@ -33,7 +31,7 @@ export default function TopBar() {
             </li>
             <li>
               <NavLink 
-                to="#"
+                to="/catalogo"
                 className={({ isActive}: {isActive: boolean}) => 
                   isActive
                     ? "nav-link text-[#155C22]" //Activo
@@ -47,7 +45,7 @@ export default function TopBar() {
             </li>
             <li>
               <NavLink 
-                to="#"
+                to="/nosotros"
                 className={({ isActive}: {isActive: boolean}) => 
                   isActive
                     ? "nav-link text-[#155C22]" //Activo

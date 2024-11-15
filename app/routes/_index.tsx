@@ -1,19 +1,22 @@
 // app/routes/index.tsx
 import { MetaFunction } from "@remix-run/node";
-import {TitleSection} from "../components/TextComponents";
-import { CardIndex, CardStadistics } from "../components/Cards";
+import { TitleSection } from "../components/text-components";
+import { CardIndex, CardStadistics } from "../components/cards-components";
+import { WhatsAppIcon } from "../components/icons-components";
 import "public/styles/index-custom.css";
 
 export const meta: MetaFunction = () => {
   return [
     { title: "Reganvi" },
     { name: "description", content: "Bienvenido a la página principal de Reganvi." },
+    { name: "keywords", content: "reciclaje, materiales reciclados, proveedores, provedores de materiales reciclados, Reganvi"},
+    { name: "category", content: "Reciclaje" },
   ];
 };
 
 export default function Index() {
   return (
-    < >
+    <>
       {/* Sección de Presentación */}
       <section className="w-full flex items-center justify-center bg-[#81C244] bg-gradient-circular">
         <div className="w-[1244px] flex justify-between text-center my-8">
@@ -42,8 +45,8 @@ export default function Index() {
       {/* Sección de Información */}
       <section className="w-full flex items-center justify-center bg-[#DEDEDE]">
         <div className="w-[1244px] flex flex-col justify-between text-center my-4 gap-2">
-          <div className="w-full flex items-center justify-center">
-            <TitleSection>Comercia con nosotros</TitleSection>
+          <div className="w-full flex items-center justify-center py-4">
+            <TitleSection>Comercializa con nosotros</TitleSection>
           </div>
           <div className="w-full flex items-center justify-center gap-9"> {/* contenedor de las cards */}
             <div> {/* card venta */}
@@ -53,8 +56,8 @@ export default function Index() {
                 imageSrc="../images/general/person.svg"
                 description="Ofrece tus materiales reciclados y conecta con empresas que los necesitan."
                 buttonText="OFRECE"
-                buttonBgColor="bg-[#238235]"
-                buttonLink="#"
+                buttonBgColor="#238235"
+                buttonLink="https://wa.me/+51925531984?=Hola%20quiero%20vender%20materiales"
                 onButtonClick={() => {}}
               />
             </div>
@@ -65,8 +68,8 @@ export default function Index() {
                 imageSrc="../images/general/company.svg"
                 description="Encuentra y compra materiales reciclados para tu proceso de producción."
                 buttonText="COMPRA"
-                buttonBgColor="bg-[#0A3C5F]"
-                buttonLink="#"
+                buttonBgColor="#0A3C5F"
+                buttonLink="https://wa.me/+51925531984?=Hola%20quiero%20comprar%20materiales"
                 onButtonClick={() => {}}
               />
             </div>
@@ -86,7 +89,7 @@ export default function Index() {
             <div className="w-full flex justify-center items-center py-4"> {/* descripción estadisticas*/}
               <p className="font-raleway font-semibold text-[32px] leading-none">Nuestras estadisticas 2024</p>
             </div>
-            <div className="grid grid-cols-4"> {/* contenedor de las estadisticas */}
+            <div className="grid grid-cols-3"> {/* contenedor de las estadisticas */}
               <CardStadistics
                 value="+30"
                 description="Empresas"
@@ -98,10 +101,6 @@ export default function Index() {
               <CardStadistics
                 value="+120 TN"
                 description="Materiales"
-              />
-              <CardStadistics
-                value="+$7.5K"
-                description="Ventas"
               />
             </div>
           </div>
@@ -128,65 +127,6 @@ export default function Index() {
           </div>
         </div>
       </section>
-
-
-      {/* Footer */}
-      <footer className="w-full flex justify-center bg-[#191919] text-center text-white pt-8 pb-32">
-        <div className="w-[1224px] flex justify-between">
-          <div className="flex flex-col gap-6">
-            <div> {/* Logo */}
-              <img src="public/images/logos/reganvi-logo.svg" alt="" />
-            </div>
-            <div className="h-[106px] mini-text gap-1">
-              <p className="font-raleway font-medium text-[20px] text-start leading-none tracking-tight">Reganvi</p>
-              <p>© 2023 Reganvi Perú</p>
-            </div>
-          </div>
-          <div className="flex flex-col items-start text-left gap-6"> {/* Contacto */}
-            <div>
-              <p className="font-raleway font-medium text-[20px] text-start leading-none tracking-tight gap-1">Contacto</p>
-            </div>
-            <div className="h-[106] mini-text">
-              <p>Teléfono: +51 925 531 984</p>
-              <p>Email: reganvi.pe@gmail.com</p>
-            </div>
-          </div>
-          <div className="flex flex-col gap-6"> {/* Redes Sociales */}
-            <div>
-              <p className="font-raleway font-medium text-[20px] text-start leading-none tracking-tight">Siguenos</p>
-            </div>
-            <div className="h-[106px] flex flex-col items-start mini-text gap-1">
-              <a href="https://www.facebook.com/reganvi015" target="_blank" rel="noopener noreferrer">
-                <div className="flex justify-between">
-                  <img src="../images/logos/f-logo.svg" alt="" />
-                  <p>Facebook</p>
-                </div>
-              </a>
-              <a href="https://www.instagram.com/reganvi.pe/" target="_blank" rel="noopener noreferrer">
-                <div>
-                  <img src="../images/logos/i-logo.svg" alt="" />
-                  <p>Instagram</p>
-                </div>
-              </a>
-              <a href="https://pe.linkedin.com/company/reganvi" target="_blank" rel="noopener noreferrer">
-                <div>
-                  <img src="../images/logos/l-logo.svg" alt="" />
-                  <p>LinkedIn</p>
-                </div> 
-              </a>
-            </div>
-          </div>
-          <div className="flex flex-col text-start gap-6"> {/* Recursos */}
-            <div>
-              <p className="font-raleway font-medium text-[20px] text-start leading-none tracking-tight gap-1">Recursos</p>
-            </div>
-            <div className="h-[106px] mini-text">
-              <p>Terminos y condiciones</p>
-              <p>FAQ</p>
-            </div>
-          </div>
-        </div>
-      </footer>
       {/* Código existente */}
       
       {/* Burbuja flotante de WhatsApp */}
@@ -197,7 +137,13 @@ export default function Index() {
           className="rounded-full shadow-lg"
         >
         <div className="fixed bottom-10 right-10 bg-white rounded-[48px] shadow-[5px_5px_10px_rgba(0,0,0,0.5)]">
+          {/* Circulo Principal */}
           <img src="../images/logos/reganvi-logo.svg" alt="WhatsApp" className="m-4 w-12 h-12"/>
+
+          {/* Circulo pequeño de IA */}
+          <div className="absolute top-0 right-0 translate-x-1/4 -translate-y-1/8 bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-xs font-bold">
+            IA
+          </div>
         </div>
       </a>
     </>
