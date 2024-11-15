@@ -19,7 +19,7 @@ export default function Index() {
     <>
       {/* Sección de Presentación */}
       <section className="w-full flex items-center justify-center bg-[#81C244] bg-gradient-circular">
-        <div className="w-[1244px] flex justify-between text-center my-8 px-1">
+        <div className="w-[1224px] flex justify-between text-center my-8 px-1">
           <div className="flex flex-col text-left">
             <div>
               <h1 className="font-montserrat font-bold text-[72px] leading-[80px] ">
