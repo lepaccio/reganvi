@@ -55,7 +55,7 @@ export default function Nosotros() {
             <hr className="w-full border-[1px] border-black rounded-full opacity-10"/>
             <CardUs
               title="Presencia Internacional"
-              description="Reganvi se encuentra en una fase de expansión. Nos preparamos para acceder a fondos de inversión de mayor escala, con el objetivo de incrementar nuestro impacto y consolidar la economía circular como una oportunidad tangible en el mercado. Buscamos contribuir significativamente al sector de reciclaje en América Latina, generando impacto positivo y sostenible en el medio ambiente y las comunidades."
+              description='Gracias a nuestro compromiso con la sostenibilidad, hemos sido reconocidos a nivel internacional, destacando en el programa de preincubación Santander Explorer 2023-2, donde quedamos entre los mejores proyectos a nivel mundial. Además, fuimos la segunda mejor startup internacional en el programa de aceleración polaco Unsung Heroes. Estas experiencias han fortalecido nuestra reputación como una startup ambiental y social, impulsada por nuestro reciente reconocimiento en el Desafío Kunan, en la categoría de "Jóvenes por el Cambio Climático".'
               imagepath="../images/general/us/internacional.webp"
             />
             <hr className="w-full border-[1px] border-black rounded-full opacity-10"/>
