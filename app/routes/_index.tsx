@@ -1,22 +1,30 @@
 // app/routes/index.tsx
 import { MetaFunction } from "@remix-run/node";
+<<<<<<< HEAD
 import {TitleSection} from "../components/text-components";
 import { CardIndex, CardStadistics } from "../components/cards-components";
+=======
+import { TitleSection } from "../components/text-components";
+import { CardIndex, CardStadistics } from "../components/cards-components";
+import { WhatsAppIcon } from "../components/icons-components";
+>>>>>>> percydev
 import "public/styles/index-custom.css";
 
 export const meta: MetaFunction = () => {
   return [
     { title: "Reganvi" },
     { name: "description", content: "Bienvenido a la página principal de Reganvi." },
+    { name: "keywords", content: "reciclaje, materiales reciclados, proveedores, provedores de materiales reciclados, Reganvi"},
+    { name: "category", content: "Reciclaje" },
   ];
 };
 
 export default function Index() {
   return (
-    < >
+    <>
       {/* Sección de Presentación */}
       <section className="w-full flex items-center justify-center bg-[#81C244] bg-gradient-circular">
-        <div className="w-[1244px] flex justify-between text-center my-8">
+        <div className="w-[1224px] flex justify-between text-center my-8 px-1">
           <div className="flex flex-col text-left">
             <div>
               <h1 className="font-montserrat font-bold text-[72px] leading-[80px] ">
@@ -42,8 +50,8 @@ export default function Index() {
       {/* Sección de Información */}
       <section className="w-full flex items-center justify-center bg-[#DEDEDE]">
         <div className="w-[1244px] flex flex-col justify-between text-center my-4 gap-2">
-          <div className="w-full flex items-center justify-center">
-            <TitleSection>Comercia con nosotros</TitleSection>
+          <div className="w-full flex items-center justify-center py-4">
+            <TitleSection>Comercializa con nosotros</TitleSection>
           </div>
           <div className="w-full flex items-center justify-center gap-9"> {/* contenedor de las cards */}
             <div> {/* card venta */}
@@ -53,8 +61,8 @@ export default function Index() {
                 imageSrc="../images/general/person.svg"
                 description="Ofrece tus materiales reciclados y conecta con empresas que los necesitan."
                 buttonText="OFRECE"
-                buttonBgColor="bg-[#238235]"
-                buttonLink="#"
+                buttonBgColor="#238235"
+                buttonLink="https://wa.me/+51925531984?=Hola%20quiero%20vender%20materiales"
                 onButtonClick={() => {}}
               />
             </div>
@@ -65,8 +73,8 @@ export default function Index() {
                 imageSrc="../images/general/company.svg"
                 description="Encuentra y compra materiales reciclados para tu proceso de producción."
                 buttonText="COMPRA"
-                buttonBgColor="bg-[#0A3C5F]"
-                buttonLink="#"
+                buttonBgColor="#0A3C5F"
+                buttonLink="https://wa.me/+51925531984?=Hola%20quiero%20comprar%20materiales"
                 onButtonClick={() => {}}
               />
             </div>
@@ -86,9 +94,9 @@ export default function Index() {
             <div className="w-full flex justify-center items-center py-4"> {/* descripción estadisticas*/}
               <p className="font-raleway font-semibold text-[32px] leading-none">Nuestras estadisticas 2024</p>
             </div>
-            <div className="grid grid-cols-4"> {/* contenedor de las estadisticas */}
+            <div className="grid grid-cols-3"> {/* contenedor de las estadisticas */}
               <CardStadistics
-                value="+30"
+                value="+50"
                 description="Empresas"
               />
               <CardStadistics
@@ -96,12 +104,8 @@ export default function Index() {
                 description="Comunidad"
               />
               <CardStadistics
-                value="+120 TN"
+                value="+200 TN"
                 description="Materiales"
-              />
-              <CardStadistics
-                value="+$7.5K"
-                description="Ventas"
               />
             </div>
           </div>
@@ -128,7 +132,20 @@ export default function Index() {
           </div>
         </div>
       </section>
+      {/* Código existente */}
+      
+      {/* Burbuja flotante de WhatsApp */}
+      <a
+          href="https://wa.me/+14243737214?text=Hola%20quiero%20saber%20cuanto%20cuesta%20un%20material"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="rounded-full shadow-lg"
+        >
+        <div className="fixed bottom-10 right-10 bg-white rounded-[48px] shadow-[5px_5px_10px_rgba(0,0,0,0.5)]">
+          {/* Circulo Principal */}
+          <img src="../images/logos/reganvi-logo.svg" alt="WhatsApp" className="m-4 w-12 h-12"/>
 
+<<<<<<< HEAD
 
       {/* Footer */}
       <footer className="w-full flex justify-center bg-[#191919] text-center text-white pt-8 pb-32">
@@ -184,9 +201,14 @@ export default function Index() {
               <p>Terminos y condiciones</p>
               <p>FAQ</p>
             </div>
+=======
+          {/* Circulo pequeño de IA */}
+          <div className="absolute top-0 right-0 translate-x-1/4 -translate-y-1/8 bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-xs font-bold">
+            IA
+>>>>>>> percydev
           </div>
         </div>
-      </footer>
+      </a>
     </>
   );
 }

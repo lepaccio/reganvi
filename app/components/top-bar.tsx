@@ -1,5 +1,3 @@
-// app/components/TopBar.tsx
-
 import { Link } from "@remix-run/react";
 import { NavLink } from "@remix-run/react";
 import { NavItemText } from "./text-components";
@@ -33,7 +31,7 @@ export default function TopBar() {
             </li>
             <li>
               <NavLink 
-                to="#"
+                to="/catalogo"
                 className={({ isActive}: {isActive: boolean}) => 
                   isActive
                     ? "nav-link text-[#155C22]" //Activo
@@ -47,7 +45,7 @@ export default function TopBar() {
             </li>
             <li>
               <NavLink 
-                to="#"
+                to="/nosotros"
                 className={({ isActive}: {isActive: boolean}) => 
                   isActive
                     ? "nav-link text-[#155C22]" //Activo
