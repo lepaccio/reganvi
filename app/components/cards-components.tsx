@@ -1,14 +1,8 @@
-<<<<<<< HEAD
-import React from "react";
-import { CardTitleIndex , CardDescription } from "./text-components";
-import { Link } from "@remix-run/react";
-=======
 import React, {useState} from "react";
 import { CardTitleIndex , CardDescription } from "./text-components";
 import { Link } from "@remix-run/react";
 import { WhatsAppIcon } from "./icons-components";
 import { c } from "node_modules/vite/dist/node/types.d-aGj9QkWt";
->>>>>>> percydev
 
 type CardProps = {
     bgcolor?: string;
@@ -27,19 +21,12 @@ export function CardIndex({
     imageSrc, 
     description, 
     buttonText, 
-<<<<<<< HEAD
-    buttonBgColor = "bg-[#81C244]",
-    buttonLink = "#",
-    onButtonClick,
-}: CardProps) {
-=======
     buttonBgColor = "#81C244",
     buttonLink = "#",
     onButtonClick,
 }: CardProps) {
     const [hovered, setHovered] = useState(false);
 
->>>>>>> percydev
     return (
         <div 
          className={`w-[496px] flex flex-col items-center px-4 py-4 ${bgcolor}`} 
@@ -60,18 +47,6 @@ export function CardIndex({
                 <CardDescription>{description}</CardDescription>
             </div>
             <div className="w-full flex justify-center py-4"> {/* contenedor del botón */}
-<<<<<<< HEAD
-                <Link
-                    to={buttonLink}
-                    className={`${buttonBgColor} text-white w-[288px] px-4 py-3 rounded-full flex items-center justify-center gap-2`}
-                    onClick={onButtonClick}
-                >
-                    <img src="../images/icons/whatsapplogo.svg" alt="logo whatsapp" />
-                    <span className="font-montserrat font-semibold text-[24px] tracking-normal leading-none">
-                        {buttonText} 
-                    </span>
-                </Link>
-=======
                 <a
                     href={buttonLink}
                     target="_blank"
@@ -98,7 +73,6 @@ export function CardIndex({
                         {buttonText} 
                     </span>
                 </a>
->>>>>>> percydev
             </div>
         </div>
     );
@@ -124,9 +98,6 @@ export function CardStadistics({
         </div>
     );
 
-<<<<<<< HEAD
-}
-=======
 }
 
 type CardCatalogProps = {
@@ -240,4 +211,3 @@ export function CardUs({
         </div>
     );
 }
->>>>>>> percydev

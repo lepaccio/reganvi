@@ -1,13 +1,8 @@
 // app/routes/index.tsx
 import { MetaFunction } from "@remix-run/node";
-<<<<<<< HEAD
-import {TitleSection} from "../components/text-components";
-import { CardIndex, CardStadistics } from "../components/cards-components";
-=======
 import { TitleSection } from "../components/text-components";
 import { CardIndex, CardStadistics } from "../components/cards-components";
 import { WhatsAppIcon } from "../components/icons-components";
->>>>>>> percydev
 import "public/styles/index-custom.css";
 
 export const meta: MetaFunction = () => {
@@ -145,67 +140,9 @@ export default function Index() {
           {/* Circulo Principal */}
           <img src="../images/logos/reganvi-logo.svg" alt="WhatsApp" className="m-4 w-12 h-12"/>
 
-<<<<<<< HEAD
-
-      {/* Footer */}
-      <footer className="w-full flex justify-center bg-[#191919] text-center text-white pt-8 pb-32">
-        <div className="w-[1224px] flex justify-between">
-          <div className="flex flex-col gap-6">
-            <div> {/* Logo */}
-              <img src="../images/logos/reganvi-logo.svg" alt="" />
-            </div>
-            <div className="h-[106px] mini-text gap-1">
-              <p className="font-raleway font-medium text-[20px] text-start leading-none tracking-tight">Reganvi</p>
-              <p>© 2023 Reganvi Perú</p>
-            </div>
-          </div>
-          <div className="flex flex-col items-start text-left gap-6"> {/* Contacto */}
-            <div>
-              <p className="font-raleway font-medium text-[20px] text-start leading-none tracking-tight gap-1">Contacto</p>
-            </div>
-            <div className="h-[106] mini-text">
-              <p>Teléfono: +51 925 531 984</p>
-              <p>Email: reganvi.pe@gmail.com</p>
-            </div>
-          </div>
-          <div className="flex flex-col gap-6"> {/* Redes Sociales */}
-            <div>
-              <p className="font-raleway font-medium text-[20px] text-start leading-none tracking-tight">Siguenos</p>
-            </div>
-            <div className="h-[106px] flex flex-col items-start mini-text gap-1">
-              <a href="https://www.facebook.com/reganvi015" target="_blank" rel="noopener noreferrer">
-                <div className="flex justify-between">
-                  <img src="../images/logos/f-logo.svg" alt="" />
-                  <p>Facebook</p>
-                </div>
-              </a>
-              <a href="https://www.instagram.com/reganvi.pe/" target="_blank" rel="noopener noreferrer">
-                <div>
-                  <img src="../images/logos/i-logo.svg" alt="" />
-                  <p>Instagram</p>
-                </div>
-              </a>
-              <a href="https://pe.linkedin.com/company/reganvi" target="_blank" rel="noopener noreferrer">
-                <div>
-                  <img src="../images/logos/l-logo.svg" alt="" />
-                  <p>LinkedIn</p>
-                </div> 
-              </a>
-            </div>
-          </div>
-          <div className="flex flex-col text-start gap-6"> {/* Recursos */}
-            <div>
-              <p className="font-raleway font-medium text-[20px] text-start leading-none tracking-tight gap-1">Recursos</p>
-            </div>
-            <div className="h-[106px] mini-text">
-              <p>Terminos y condiciones</p>
-              <p>FAQ</p>
-            </div>
-=======
           {/* Circulo pequeño de IA */}
           <div className="absolute top-0 right-0 translate-x-1/4 -translate-y-1/8 bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-xs font-bold">
             IA
->>>>>>> percydev
           </div>
         </div>
       </a>
