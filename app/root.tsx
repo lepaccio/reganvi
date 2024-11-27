@@ -6,7 +6,7 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 import type { LinksFunction } from "@remix-run/node";
-
+import { Analytics } from "@vercel/analytics/remix"
 import "./tailwind.css";
 import TopBar from "./components/top-bar";
 import BottomBar from "./components/bottom-bar";
@@ -27,7 +27,7 @@ export const links: LinksFunction = () => [
   { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
 ];
 
-export function Layout({ /*children*/ }: { /*children: React.ReactNode*/ }) {
+export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="es">
       <head>
@@ -46,7 +46,7 @@ export function Layout({ /*children*/ }: { /*children: React.ReactNode*/ }) {
         <ScrollRestoration />
         <Scripts />
         {/* Footer */}
-        <footer className="w-full font-raleway flex justify-center bg-[#191919] text-center text-white p-8 mb-16 md:mb-0">
+        <footer className="w-full font-raleway flex justify-center bg-[#191919] text-center text-white p-8 mb-16">
           <div className="flex
             sm:w-min-[343px] sm:flex-col sm:items-center sm:text-[12px] sm:gap-8 
             md:items-start md:flex-row md:justify-between md:text-[16px]
@@ -133,6 +133,7 @@ export function Layout({ /*children*/ }: { /*children: React.ReactNode*/ }) {
         </div>
         <ScrollRestoration />
         <Scripts />
+        <Analytics />
       </body>
     </html>
   );
