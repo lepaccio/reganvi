@@ -24,7 +24,9 @@ export default {
 
       screens: {
         "lg": "1336px",
-        "sm": "440px",
+        "customcard": "826px",
+        "md": "700px",
+        "sm": "0px",
       },
     },
   },

@@ -8,7 +8,7 @@ type TitleProps = {
 export function NavItemText({ children, className = "" }: TitleProps) {
     return (
         <span
-            className={`${className} font-montserrat font-medium text-[22px] leading-[28px] ${className}`}
+            className={`${className} font-montserrat font-medium lg:text-[22px] lg:leading-[28px] ${className}`}
         >
             {children}
         </span>
@@ -18,14 +18,10 @@ export function NavItemText({ children, className = "" }: TitleProps) {
 export function TitleSection({ children, className = "" }: TitleProps) {
   return (
     <h2
-      className={`text-[#155C22] ${className}`}
-      style={{
-        fontFamily: 'Montserrat, sans-serif',
-        fontWeight: 'regular',
-        fontSize: '57px',
-        lineHeight: '64px',
-        letterSpacing: '-0.25px',
-      }}
+      className={`text-[#155C22] font-montserrat text-center
+        sm:text-[32px] sm:leading-[40px]
+        lg:text-[57px] lg:leading-[64px] tracking-[-0.25px]
+        ${className}`}
     >
       {children}
     </h2>
@@ -35,7 +31,7 @@ export function TitleSection({ children, className = "" }: TitleProps) {
 export function CardTitleIndex({ children, className = "" }: TitleProps) {
     return (
       <h3
-        className={`text-white ${className} font-montserrat font-semibold text-[45px] leading-[55px] ${className}`}   
+        className={`text-white ${className} font-montserrat font-semibold sm:text-[24px] sm:leading-8 lg:text-[45px] lg:leading-[55px] ${className}`}   
       >
         {children}
       </h3>
@@ -45,7 +41,10 @@ export function CardTitleIndex({ children, className = "" }: TitleProps) {
 export function CardDescription ({ children, className = "" }: TitleProps) {
     return (
       <p
-        className={`text-white ${className} font-raleway font-medium text-[24px] leading-[28px] ${className}`}
+        className={`text-white ${className} font-raleway font-medium 
+        sm:text-[14px] sm:leading-4 
+        lg:text-[24px] lg:leading-[28px] 
+        ${className}`}
       >
         {children}
       </p>

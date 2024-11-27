@@ -5,15 +5,25 @@ import "public/styles/navigation.css"; // Importa los estilos de navegación
 
 export default function TopBar() {
   return (
-    <header className="bg-white text-black w-full py-2">
-      <div className="w-full max-w-[1244px] lg:max-w-[1244px] sm:max-w-[343px] mx-auto flex items-center justify-between">
+    <header className="fixed top-0 md:static bg-white text-black w-full py-2 z-50">
+      <div className="w-full max-w-[1244px] mx-auto flex items-center justify-between  
+        sm:max-w-[343px] 
+        lg:max-w-[1244px]">
         {/* Logo */}
         <Link to="/" className="my-2">
-          <img src="../images/logos/logo-page.svg" alt="Reganvi Logo" className="logo-size inline-block mr-2" />
+          <img
+            src="../images/logos/logo-page.svg" 
+            alt="Reganvi Logo" 
+            className="inline-block mr-2
+              h-9 w-[131px]
+              md:h-auto md:w-auto" 
+            />
         </Link>
-        
+        <a className="lg:hidden" href="https://wa.me/+14243737214?text=Hola%20quiero%20saber%20cuanto%20cuesta%20un%20material">
+          <img src="../images/icons/ia-icon.svg" alt="logo IA" />
+        </a>     
         {/* Navegación */}
-        <nav className="hidden sm:flex">
+        <nav className="hidden md:block">
           <ul className="flex space-x-4">
             <li>
               <NavLink 
