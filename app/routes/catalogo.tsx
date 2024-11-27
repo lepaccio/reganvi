@@ -17,15 +17,27 @@ export default function Catalogo() {
           className="w-full bg-[#81C244] flex justify-center" 
           style={{backgroundImage: 'linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0, rgba(0, 0, 0, 0) 50%)'
         }}> {/* Sección de título */}
-          <div className="w-[1224px] font-montserrat text-[72px] px-1 my-8 flex flex-col gap-2 ">
-            <h1 className="font-bold leading-[80px]">Precios <span className="text-[#155C22]">Estimados</span></h1>
-            <p className="font-raleway text-[22px] leading-[26px]">¿Que nuevo material deseas comprar hoy?</p>
+          <div 
+            className="px-1 my-8 flex flex-col gap-2 font-montserrat 
+              w-[342px] text-[48px] leading-[56px] text-white
+              md:w-[1224px] md:text-[72px] md:leading-[80px]
+          ">
+            <h1 className="font-bold">Precios <span className="text-[#155C22]">Estimados</span></h1>
+            <p className="font-raleway
+              text-[16px] leading-[22px] 
+              md:text-[22px] md:leading-[26px]"
+            >
+              ¿Que nuevo material deseas comprar hoy?
+            </p>
           </div>
         </section>
         <section className="w-full bg-[#DEDEDE] flex justify-center pt-8 pb-11 gap-4"> {/* Sección de catálogo */}
-          <div className="w-[1224px] flex flex-col gap-6">
+          <div className="flex flex-col gap-6
+            w-[342px]
+            md:w-[1224px] 
+          ">
             <TitleSection className="px-2">Mira nuestro catalogo</TitleSection>
-            <div className="grid grid-cols-4 grid-rows-2 gap-6">
+            <div className="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 place-items-center gap-6">
               <CardCatalog
                 imagepath="../images/general/catalog/papeles.jpeg"
                 title="PAPEL"

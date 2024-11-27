@@ -14,7 +14,7 @@ export default function Nosotros() {
     return (
       <>
         <section className="w-full bg-[#DEDEDE] flex justify-center">
-          <div className="w-[1224px] flex flex-col items-center gap-16 pt-24 pb-16">
+          <div className="w-[342px] md:w-[1224px] flex flex-col items-center gap-4 md:gap-16 pt-24 pb-16">
             <TitleSection>¿Quiénes somos?</TitleSection>
             <hr className="w-full border-[1px] border-black rounded-full opacity-10"/>
             <CardUs
