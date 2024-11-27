@@ -5,7 +5,8 @@ import { WhatsAppIcon } from "./icons-components";
 type CardProps = {
     bgcolor?: string;
     title: string;
-    imageSrc: string;
+    imageSrcLarge: string;
+    imageSrcSmall: string;
     description: string;
     buttonText: string;
     buttonBgColor?: string;
@@ -16,7 +17,8 @@ type CardProps = {
 export function CardIndex({
     bgcolor,
     title, 
-    imageSrc, 
+    imageSrcLarge,
+    imageSrcSmall, 
     description, 
     buttonText, 
     buttonBgColor = "#81C244",
@@ -38,8 +40,9 @@ export function CardIndex({
                 <CardTitleIndex>{title}</CardTitleIndex>
             </div>
             <hr className="w-3/4 border-white"/>
-            <div className="w-full h-[150px] flex justify-center my-4"> {/* contenedor de la imagen */}
-                <img src={imageSrc} alt={title} />
+            <div className="w-full h-[118px] md:h-[150px] flex justify-center my-4"> {/* contenedor de la imagen */}
+                <img src={imageSrcSmall} alt={title} className="md:hidden"/>
+                <img src={imageSrcLarge} alt={title} className="hidden md:block"/>
             </div>
             <div className="sm:w-[263px] sm:h-[60px] lg:w-[288px] lg:h-[144px] flex justify-center items-center py-4 px-4 font-medium"> {/* contenedor de la descripción */}
                 <CardDescription>{description}</CardDescription>

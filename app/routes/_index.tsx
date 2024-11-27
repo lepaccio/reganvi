@@ -75,7 +75,8 @@ export default function Index() {
             <CardIndex
               bgcolor="bg-[#8BB663]"
               title="Quiero vender"
-              imageSrc="../images/general/person.svg"
+              imageSrcSmall="../images/general/person.webp"
+              imageSrcLarge="../images/general/person.svg"
               description="Ofrece tus materiales reciclados y conecta con empresas que los necesitan."
               buttonText="OFRECE"
               buttonBgColor="#238235"
@@ -86,7 +87,8 @@ export default function Index() {
             <CardIndex
               bgcolor="bg-[#66ACCE]"
               title="Quiero comprar"
-              imageSrc="../images/general/company.svg"
+              imageSrcSmall="../images/general/company.webp"
+              imageSrcLarge="../images/general/company.svg"
               description="Encuentra y compra materiales reciclados para tu proceso de producción."
               buttonText="COMPRA"
               buttonBgColor="#0A3C5F"
