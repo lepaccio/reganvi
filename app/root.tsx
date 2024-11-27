@@ -18,10 +18,7 @@ export const links: LinksFunction = () => [
     href: "https://fonts.gstatic.com",
     crossOrigin: "anonymous",
   },
-  {
-    rel: "stylesheet",
-    href: "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap",
-  },
+  { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@400;500&display=swap" },
   { rel: "stylesheet", href: "/styles/index-custom.css" }, // Asegúrate de que esté incluido aquí
   { rel: "stylesheet", href: "/styles/navigation.css" },
   { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
