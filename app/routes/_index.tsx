@@ -59,7 +59,7 @@ export default function Index() {
         {/* Imagen como fondo mobile */}
         <div 
           className="absolute inset-0 bg-cover bg-black bg-opacity-25 w-full filter opacity-20 md:hidden" 
-          style={{backgroundImage: 'url(../images/general/object.svg)',}}/>
+          style={{backgroundImage: 'url(../images/general/object.png)',}}/>
       </section>
 
       {/* Sección de Información */}
